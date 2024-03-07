@@ -30,11 +30,9 @@ public class EmployeeManagerTest {
 	@Test()
 	public void test_EmployeeManager_getJSONRecords() throws Exception {
 
-		String data = """
-					[
-						{"name":"Shyam", "email":"shyamjaiswal@gmail.com"},  
-					]
-				""";
+		String data = "	[\n" +
+                      "		{\"name\":\"Shyam\", \"email\":\"shyamjaiswal@gmail.com\"},\n" +
+                      "	]\n";
 		int expectation = 1;
 
 		Object empArray = JSONValue.parse(data);
